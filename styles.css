@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+.hidden {
+    display: none !important;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.input-wrapper {
+    /* Flexbox for right alignment */
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.question {
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question:last-child {
+    border-bottom: none;
+}
+.question label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.question input[type="checkbox"], .question input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Custom Checkbox Styling */
+.question input[type="checkbox"], .question input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 2px solid #cacece;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.question input[type="checkbox"]:checked, .question input[type="radio"]:checked {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.question input[type="checkbox"]:checked:after, .question input[type="radio"]:checked:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: white;
+}
+
+/* For Radio Buttons to have a circular shape */
+.question input[type="radio"] {
+    border-radius: 50%;
+}
+
+.question input[type="radio"]:checked:after {
+    border-radius: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover {
+    background: #0056b3;
+}
+#summary {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e7f3ff;
+    border: 1px solid #bce8f1;
+}
+#summary ul {
+    padding-left: 20px;
+}
+#summary li {
+    margin-bottom: 10px;
+}
