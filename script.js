@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     displaySummary();
                     toggleQuestionGroup('group_key_diagnostic_signs', 'group_applicable_for_all');
                 } else {
-                    updateSummary('UTI less likely - Self-care and pain relief.');
                     displaySummary()
                     toggleQuestionGroup('group_key_diagnostic_signs', 'group_other_urinary_symptoms');
                 }
@@ -143,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     displaySummary()
                     toggleQuestionGroup('group_other_urinary_symptoms', 'group_applicable_for_all');
                 }
-                toggleQuestionGroup('group_other_urinary_symptoms', 'group_shared_decision_making');
             });
             document.getElementById('group_other_urinary_symptoms').appendChild(nextButtonOtherUrinary);
 
